@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ css_url }}">
+</head>
+<body>
+    <button id="modeToggle">Toggle Dark/Light Mode</button>
+    <h1>Create your Account</h1>
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script src="{{ url_for('static', filename='file.js') }}"></script>
+    <p> Visitors: <span id="visitorCount">0</span></p>
+</body>
+</html>
