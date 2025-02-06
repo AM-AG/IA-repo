@@ -1,0 +1,119 @@
+/* Style the navigation bar */
+.navbar {
+    display:inline-block;
+    top: 10px;
+    background-color: #333;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration:none;
+    padding: 3px 20px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #755151;
+    border-radius: 10px;
+}
+
+/* Hamburger menu */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .nav-links a {
+        text-align: center;
+        padding: 15px;
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+/* Dark mode */
+body.dark-mode {
+    background-color: black;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Toggle Button */
+#modeToggle {
+    position:fixed;
+    top: 5px;
+    right: 30px;
+    left: 10px;
+    padding: 2px;
+    background-color: #ddd;
+    border: gray;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #162c3f;
+    top:10px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 150px;
+}
+
+h1 {
+    text-align:left;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-right: 1px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    width: 20%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #100e0e;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: rgb(14, 10, 10);
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #545854;
+}

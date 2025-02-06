@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP-project</title>
+    <link rel="stylesheet" type="text/css" href="{{ css_url }}">
+</head>
+<body>
+    <button id="modeToggle"> Dark </button>
+    <nav class="navbar">
+        <a href="{{ url_for('home_page') }}">Home</a>
+        <a href="{{ url_for('Translation') }}">Translate</a>
+        <a href="{{ url_for('Speech_recognition') }}">Speech recognition</a>
+    </nav>
+    <h1>Let's explore together the NLP in python</h1>
+    <label for="Categories">Categories: </label><br>
+    <select name="cars" id="cars" required>
+        <option value="Translation">Translation</option>
+        <option value="Extraction">Extraction</option>
+        <option value="Text classification">Text classification</option>
+        <option value="Speech recognition">Speech recognition</option>
+    </select>
+    <br><br>
+    <button type="submit"> Let's do it !! </button>
+
+    <script src="{{ url_for('static', filename='home_file.js') }}"></script>
+
+</body>
+</html>
